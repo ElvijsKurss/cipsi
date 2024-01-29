@@ -10,7 +10,12 @@
     <header class="header">
         <nav id="navigation-bar">
             <div id="header-container">
-                <div id="logo">Garšīga kompānija</div>
+                <div id="logo-container">
+                    <div class="logo"><a href="#"><img src="assets/logo.svg" alt="Logo"></a></div>
+                    <div>
+                        <p id="logo-teksts">Garšīga kompānija</p>
+                    </div>
+                </div>
                 <div id="list-container">
                     <ul id="list">
                         <li class="list-element">Jaunumi</li>
