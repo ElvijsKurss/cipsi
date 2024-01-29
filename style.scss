@@ -1,0 +1,44 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background: #ea7527;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+#navigation-bar {
+  display: flex;
+  border: 1px solid red;
+}
+
+#header-container {
+  display: flex;
+  border: 1px solid blue;
+}
+
+#logo {
+  display: flex;
+  border: 1px solid green;
+}
+
+#list-container {
+  display: flex;
+  border: 1px solid white;
+}
+
+#list {
+  display: flex;
+  list-style: none;
+  border: 1px solid purple;
+}
+
+.list-element {
+  display: flex;
+  border: 1px solid black;
+  list-style: none;
+}
