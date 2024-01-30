@@ -12,26 +12,11 @@ html {
 }
 .header #navigation-bar {
   display: flex;
-  border: 1px solid red;
   height: 140px;
   padding-left: 200px;
   position: relative;
 }
 .header #navigation-bar #header-container {
-  display: flex;
-  border: 1px solid blue;
-}
-.header #navigation-bar #header-container #logo-container {
-  display: flex;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  flex-direction: column;
-}
-.header #navigation-bar #header-container #logo-container .logo {
-  height: 90px;
-  width: auto;
   display: flex;
 }
 .header #navigation-bar #header-container #logo-container #logo-teksts {
@@ -42,27 +27,66 @@ html {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 15px;
-}
-.header #navigation-bar #header-container #logo {
-  display: flex;
-  border: 1px solid green;
+  text-decoration: none;
+  font-family: PhantomBlack;
 }
 .header #navigation-bar #header-container #list-container {
   display: flex;
-  border: 1px solid white;
 }
 .header #navigation-bar #header-container #list-container #list {
   display: flex;
   list-style: none;
-  border: 1px solid purple;
   align-items: center;
 }
 .header #navigation-bar #header-container #list-container #list .list-element {
-  display: block;
   line-height: 36px;
   padding: 0 20px;
   color: #fff;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 15px;
+  font-family: PhantomBlack;
+}
+.header #navigation-bar #header-container #list-container #list .list-element a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: row;
+}
+.header #navigation-bar #header-container #list-container #list .list-element a:hover {
+  text-decoration: underline;
+}
+.header #navigation-bar #header-container #list-container #list .list-element a .fa {
+  color: #f4c00c;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  padding-left: 7px;
+  margin-top: -3px;
+}
+.header #navigation-bar #header-container #list-container #list .list-element a .fa:hover {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: PhantomItalicBlack;
+  src: url(fonti/AnyConv.com__Panton-BlackitalicCaps.ttf);
+}
+@font-face {
+  font-family: PhantomBlack;
+  src: url(fonti/AnyConv.com__Panton-BlackCaps.ttf);
+}
+@font-face {
+  font-family: PhantomLight;
+  src: url(fonti/AnyConv.com__Panton-LightCaps.ttf);
+}
+@font-face {
+  font-family: PhantomItalicLight;
+  src: url(fonti/AnyConv.com__Panton-LightItalicCaps.ttf);
+}
+.wrapper {
+  max-width: 1650px;
+  margin: auto;
+  box-sizing: border-box;
 }/*# sourceMappingURL=style.css.map */

@@ -9,23 +9,26 @@
 <body>
     <header class="header">
         <nav id="navigation-bar">
-            <div id="header-container">
-                <div id="logo-container">
-                    <div class="logo"><a href="#"><img src="assets/logo.svg" alt="Logo"></a></div>
-                    <div>
-                        <p id="logo-teksts">Garšīga kompānija</p>
+            <div class="wrapper">
+                <div id="header-container">
+                    <div id="logo-container">
+                        <div class="logo"><a href="#"><img src="assets/logo.svg" alt="Logo"></a></div>
+                        <div>
+                            <p id="logo-teksts">Garšīga kompānija</p>
+                        </div>
+                    </div>
+                    <div id="list-container">
+                        <ul id="list">
+                            <li class="list-element"><a href="#">Jaunumi</a></li>
+                            <li class="list-element"><a href="#">Produkti<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+                            <li class="list-element"><a href="#">Ilgtspēja</a></li>
+                            <li class="list-element"><a href="#">Uzturklase</a></li>
+                            <li class="list-element"><a href="#">Par mums<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+                        </ul>
                     </div>
                 </div>
-                <div id="list-container">
-                    <ul id="list">
-                        <li class="list-element">Jaunumi</li>
-                        <li class="list-element">Produkti</li>
-                        <li class="list-element">Ilgtspēja</li>
-                        <li class="list-element">Uzturklase</li>
-                        <li class="list-element">Par mums</li>
-                    </ul>
-                </div>
             </div>
+            <?php wp_nav_menu(['theme_location' => 'header-menu']); ?>
         </nav>
     </header>
     <div id="main-content">
