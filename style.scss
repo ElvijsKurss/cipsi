@@ -1,5 +1,16 @@
+/*
+Theme Name: cipsi
+Theme URI: #
+Description: Child theme
+Author: Elvijs Kurss
+Version: 1.0.0
+*/
+
+/* Add your custom styles here */
+
 body,
 html {
+  height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -13,6 +24,7 @@ html {
 @import "scss/uzturklase";
 @import "scss/breakpoints";
 @import "fonti/fonti";
+@import "scss/footeris";
 
 .wrapper {
   max-width: 1490px + (80 * 2);

@@ -9,17 +9,22 @@
 <body>
     <header class="header">
         <nav id="navigation-bar">
+            <?php wp_nav_menu(['theme_location' => 'header-menu']); ?>
             <div class="wrapper">
                 <div id="header-container">
                     <div id="logo-container">
-                        <div class="logo"><a href="#"><img src="assets/logo.svg" alt="Logo"></a></div>
+                        <div class="logo">
+                            <a href="#">
+                                <img src="<?= get_stylesheet_directory_uri() ?>assets/logo.svg" alt="Cipsi logo" />
+                            </a>
+                        </div>
                         <div>
                             <p id="logo-teksts">Garšīga kompānija</p>
                         </div>
                     </div>
                     <div id="list-container">
                         <ul id="list">
-                            <li class="list-element"><a href="#">Jaunumi</a></li>
+                            <li class="list-element"><a href="Jaunumi">Jaunumi</a></li>
                             <li class="list-element"><a href="#">Produkti<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
                             <li class="list-element"><a href="#">Ilgtspēja</a></li>
                             <li class="list-element"><a href="#">Uzturklase</a></li>
@@ -28,7 +33,6 @@
                     </div>
                 </div>
             </div>
-            <?php wp_nav_menu(['theme_location' => 'header-menu']); ?>
         </nav>
     </header>
     <div id="main-content">
